@@ -1,0 +1,140 @@
+body {
+    background-color: rgb(207, 211, 215);
+    padding: 0;
+    margin: 0;
+    font-family: 'SF-Pro-Text-Regular';
+}
+
+.hidden {
+    display: none;
+
+}
+
+header {
+    /* background-color: aquamarine; */
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    
+}
+
+
+header img {
+    position: relative;
+    left: -2%;
+    width: 210px;
+    height: auto;
+    transition: transform 0.5s ease-in-out;
+}
+
+header img:hover {
+    transform: rotate(90deg); 
+}
+
+
+object {
+    position: relative;
+    width: 200px;
+    height: auto;
+    z-index: -1;
+}
+
+ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    margin-left: 20%;
+   
+  
+    
+}
+
+li {
+    list-style: none;
+    /* display: flex; */
+    margin: 0 50% ;
+    
+}
+
+/* lightbox */
+.lightbox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30vw;
+    height: 200vh;
+    max-height: 300vh;
+    background-color: rgb(106, 106, 106);
+    overflow: hidden;
+    display: none;
+    z-index: 1;
+    /* Apply the slide-right animation */
+    animation: slide-right 1s cubic-bezier(0.445, 0.050, 0.550, 0.950);
+}
+
+.lightbox:target {
+    display: block;
+}
+
+/* Define the slide-right animation */
+@keyframes slide-right {
+    0% {
+        transform: translateX(-500px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+
+#lb-close {
+    position: absolute;
+    left: -1%;
+    width: 210px;
+    height: auto;
+    transform: rotate(90deg); 
+    animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) forwards;
+}
+
+/* Define the slide-right animation */
+@keyframes slide-left {
+    0% {
+        transform: translateX(100px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+#lb-close:hover {
+    /* transform: rotate(90deg);  */
+}
+
+.lb_text {
+    text-align: left;
+    margin-top: 300px;
+    margin-left: 20px;
+    width: 70%;
+}
+
+
+/* font */
+@font-face {
+    font-family: 'SF-Pro-Text-Regular';
+    src: local('SF-Pro-Text-Regular'), url('../assets/SF-Pro-Text-Regular.otf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  /* bgmusicmx */
+
+  #mscmxbg {
+    position: absolute;
+    width: 60vw;
+    height: auto;
+    left: 30%;
+    top: -1%;
+    z-index: -1;
+  }
+

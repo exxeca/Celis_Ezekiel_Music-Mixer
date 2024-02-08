@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+
+  <style>
+    rect {
+      fill: red;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    svg:hover #rect1 {
+      animation: moveRect1 1s alternate; 
+    }
+
+    svg:hover #rect2 {
+      animation: moveRect2 1.2s alternate; 
+    }
+
+    svg:hover #rect3 {
+      animation: moveRect3 0.8s alternate; 
+    }
+
+    /* Define the animation for rect1 */
+    @keyframes moveRect1 {
+      0% {
+        transform: translateY(0); 
+      }
+      100% {
+        transform: translateY(135px); 
+      }
+    }
+
+    /* Define the animation for rect2 */
+    @keyframes moveRect2 {
+      0% {
+        transform: translateY(0);
+      }
+      100% {
+        transform: translateY(-125px); 
+      }
+    }
+
+    /* Define the animation for rect3 */
+    @keyframes moveRect3 {
+      0% {
+        transform: translateY(0); 
+      }
+      100% {
+        transform: translateY(135px); 
+      }
+    }
+  </style>
+
+  <!-- line -->
+  <line x1="825.5" y1="431" x2="825.5" y2="698" style="fill: none; stroke: #000; stroke-linecap: round; stroke-miterlimit: 10; stroke-width: 30px;"/>
+  <line x1="937.5" y1="431" x2="937.5" y2="698" style="fill: none; stroke: #000; stroke-linecap: round; stroke-miterlimit: 10; stroke-width: 30px;"/>
+  <line x1="1049.5" y1="431" x2="1049.5" y2="698" style="fill: none; stroke: #000; stroke-linecap: round; stroke-miterlimit: 10; stroke-width: 30px;"/>
+  
+  <rect id="rect1" x="772.25" y="454.75" width="109" height="75" rx="30" ry="30" style="fill: #595959; stroke-width: 0px;"/>
+  <rect id="rect2" x="882.5" y="565" width="109" height="75" rx="30" ry="30" style="fill: #595959; stroke-width: 0px;"/>
+  <rect id="rect3" x="995" y="454.75" width="109" height="75" rx="30" ry="30" style="fill: #595959; stroke-width: 0px;"/>
+
+
+</svg>
