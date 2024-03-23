@@ -4,39 +4,125 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <link rel="stylesheet" href="css/grid.css" type="text/css">
     <title>Document</title>
 </head>
 <body>
 
-    <img src="images/UNTITLED (HD).png" id="mscmxbg" alt="bg-musicmx">
+    <!-- <img src="images/UNTITLED (HD).png" id="mscmxbg" alt="bg-musicmx"> -->
 
-    <header>
+    <header class="grid-con">
         <h1 class="hidden">My Music Taste</h1>
-        
-        <a href="#lightbox1">    
-            <img src="images/SVG/menu-icon.svg" alt="mixer_icon">
-        </a>
+            <div draggable="true" id="logo" class="col-span-full col-start-1 col-end-2 m-col-start-1 m-col-end-3 l-col-star-1 l-col-end-3">
+                <a href="#lightbox1">    
+                    <img src="images/SVG/menu-icon.svg" alt="mixer_icon">
+                </a>
+            </div>
 
-            <ul>
-                <li>Audio</li>
-                <li>Mic</li>
-                <li>Input</li>
-                <li>Output</li>
-            </ul>
+            <div id="menu" class="col-start-2 col-end-5 m-col-start-3 m-col-end-13 l-col-start-3 l-col-end-13">
+
+                    <ul>
+                        <li>Audio</li>
+                        <li>Mic</li>
+                        <li>Input</li>
+                        <li>Output</li>
+                    </ul>
+
+            </div> 
+           
     </header>
 
-        <!-- LightBox-content -->
-    <section class="lightbox" id="lightbox1">
-        <h2 class="hidden">Rini LightBox</h2>
-            <a href="" id="lb-close">
-                <img src="images/SVG/menu-icon.svg" alt="mixer_icon">
-            </a>
-                <article>
-                    <h3 class="hidden" class="lb_heading">RINI</h3>
-                    <p class="lb_text">RINI, the Filipino-Australian R&B singer, If you're into dreamy, soulful vibes with a modern twist, RINI's your guy. His music often paints a picture of love and relationships, and his smooth vocals are like a warm embrace for your ears. The beats have this ethereal quality that can transport you to a different emotional realm.</p>      
-                </article>
-    </section>
 
+    <main>
+
+            <!-- LightBox-content -->
+        <section class="lightbox" id="lightbox1">
+            <h2 class="hidden">Rini LightBox</h2>
+                <a href="" id="lb-close">
+                    <img src="images/SVG/menu-icon.svg" alt="mixer_icon">
+                </a>
+
+                    <article>
+                        <h3 class="hidden lb_heading">RINI</h3>
+                        <p class="lb_text">RINI, the Filipino-Australian R&B singer, If you're into dreamy, soulful vibes with a modern twist, RINI's your guy. His music often paints a picture of love and relationships, and his smooth vocals are like a warm embrace for your ears. The beats have this ethereal quality that can transport you to a different emotional realm.</p>      
+                    </article>
+
+                    
+                        <div id="grid-layout-lb">
+                            <div class="item-lb">1</div>
+                            <div class="item-lb">2</div>
+                            <div class="item-lb">3</div>
+                            <div class="item-lb">4</div>
+                            <div class="item-lb">5</div>
+                            <div class="item-lb">6</div>
+                            <div class="item-lb">7</div>
+                            <div class="item-lb">8</div>
+                        </div> 
+                    
+
+                    
+        </section>
+
+        <!-- Section 1 -->
+        <!-- MIDI -->
+
+        <section class="grid-con section1">
+                <h2 class="hidden">Products</h2>
+
+                <div id="Midi" class="col-span-full col-start-1 col-end-2 m-col-start-1 m-col-end-4 l-col-star-1 l-col-end-4">
+                    
+                    <h3>MIDI</h3>
+                </div>
+
+                <div id="music-mixer-title" class="col-span-full col-start-3 col-end-5 m-col-start-4 m-col-end-13 l-col-start-4 l-col-end-13">
+                    
+                    <h4>Music Mixer</h4>
+                    <p id="ve">VE-500</p>
+                </div>
+
+         <!--  Section 2 -->
+         <!-- Vinyl -->
+
+        </section>
+
+        <section class="grid-con section2">
+            <h2 class="hidden">Products</h2>
+
+            <div id="vinyl" class="col-start-1 col-end-3 m-col-start-1 m-col-end-7 l-col-start-1 l-col-end-7">
+                <!-- <img src="images/Group-11.svg" alt="vinylrecord-svg"> -->
+            </div>
+
+            <div id="tv-box" class="col-start-3 col-end-5 m-col-start-7 m-col-end-13 l-col-start-7 l-col-end-13">
+               <div id="tv-layout">tvbox</div>
+               
+                <div class="grid-item" id="grid-layout-s2">
+                    <div class="item">1</div>
+                    <div class="item">2</div>
+                    <div class="item">3</div>
+                    <div class="item">4</div>
+                    <div class="item">5</div>
+                    <div class="item">6</div>
+                    <div class="item">7</div>
+                    <div class="item">8</div>
+                </div> 
+
+                <div id="knob"></div>
+
+            </div>
+
+
+        </section>
+
+        <section class="grid-con section3">
+            <h2 class="hidden">Products</h2>
+
+            <div id="knobs" class="col-start-1 col-end-3 m-col-start-1 m-col-end-7 l-col-start-1 l-col-end-7">
+                <img src="images/Group-11.svg" alt="vinylrecord-svg">
+            </div>
+
+        </section>
+
+    </main>
         
 
 </body>
