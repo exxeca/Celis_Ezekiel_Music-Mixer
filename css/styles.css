@@ -216,7 +216,7 @@ li {
     display: inline;
     /* display: flex; */
     /* margin: 0 50% ; */
-    margin: 100px;
+    margin-left: 20px;
     background-color: aqua;
      
 }
