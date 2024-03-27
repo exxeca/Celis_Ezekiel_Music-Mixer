@@ -81,18 +81,19 @@ h4, #ve {
     /* position: absolute; */
     background-image: url(../images/Group-11.svg);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: contain; 
     /* background-position: center; */
+    
     
 
 }
 
-#vinyl img{
-    /* margin-left: 0px; */
-    /* margin-top: 20px; */
+/* #vinyl img{
+    margin-left: 0px; 
+    margin-top: 20px; 
     height: auto;
     width: 40vw;
-}
+} */
 
 /* TV - box */
 
@@ -157,8 +158,22 @@ h4, #ve {
 /* Section 3 - Knobs */
 
 #knobs {
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
 
+.section3 #knobs img {
+    height: 150px;
+    width: auto;
+    max-width: 100%;
+   
+  
+    
+    
+   
 }
 
 
