@@ -661,7 +661,7 @@ img, embed, object, video, picture {
    top: 0;
    left: 0;
    width: 30vw;
-   height: 200vh;
+   height: 250vh;
    max-height: 200vh;
    overflow: hidden;
    display: none;
@@ -1071,7 +1071,7 @@ img, embed, object, video, picture {
    top: 0;
    left: 0;
    width: 30vw;
-   height: 200vh;
+   height: 210vh;
    max-height: 300vh;
    overflow: hidden;
    display: none;
