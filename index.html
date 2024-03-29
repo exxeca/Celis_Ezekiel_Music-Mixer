@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <link rel="stylesheet" href="css/styles.css" type="text/css"> -->
+    <link rel="icon" href="data:,">
     <link rel="stylesheet" href="css/grid.css" type="text/css">
+    <link rel="stylesheet" href="css/animation.css" type="text/css">
+
     <title>Document</title>
 </head>
 <body>
@@ -13,11 +16,13 @@
 
     <header class="grid-con">
         <h1 class="hidden">My Music Taste</h1>
-            <div draggable="true" id="logo" class="col-span-full col-start-1 col-end-2 m-col-start-1 m-col-end-3 l-col-star-1 l-col-end-3">
+            
+        <div draggable="true" id="logo" class="col-span-full col-start-1 col-end-2 m-col-start-1 m-col-end-3 l-col-star-1 l-col-end-3">
                 <a href="#lightbox1">    
                     <img src="images/SVG/menu-icon.svg" alt="mixer_icon">
                 </a>
             </div>
+
 
             <div id="menu" class="col-start-2 col-end-5 m-col-start-3 m-col-end-13 l-col-start-3 l-col-end-13">
 
@@ -27,20 +32,36 @@
                         <li>Input</li>
                         <li>Output</li>
                     </ul>
-
             </div> 
            
-    </header>
 
 
-    <main>
+     </header>
+
+<!-- -------------------------------------------- -->
+
+     <main>
+
+
+        <!--  AUDIO -->
+
+        <audio id="audio1">
+            <source src="audios/song1.mp3">
+        
+          </audio>
+          
+
 
             <!-- LightBox-content -->
+
         <section class="lightbox" id="lightbox1">
             <h2 class="hidden">Rini LightBox</h2>
-                <a href="" id="lb-close">
+                <a href="#" id="lb-close">
                     <img src="images/SVG/menu-icon.svg" alt="mixer_icon">
                 </a>
+
+
+
 
                     <article>
                         <h3 class="hidden lb_heading">RINI</h3>
@@ -51,21 +72,33 @@
 
                     
                         <div id="grid-layout-lb">
-                            <div class="item-lb">
-                            <audio src="assets/beats/11_arpeg_a.mp3" draggable="true"></audio> 
-                            </div>
-                            <div class="item-lb"></div>
-                            <div class="item-lb"></div>
-                            <div class="item-lb"></div>
-                            <div class="item-lb"></div>
-                            <div class="item-lb"></div>
-                            <div class="item-lb"></div>
-                            <div class="item-lb"></div>
+                            
+
+                            <div class="item-lb" data-trackref="song1"><img src="images/sqare.png" alt="draggable element"></div>
+
+                            <div class="item-lb" data-trackref="song2"><img src="images/sqare.png" alt="draggable element"></div>
+
+                            <div class="item-lb" data-trackref="song3"><img src="images/sqare.png" alt="draggable element"></div>
+
+                            <div class="item-lb" data-trackref="song4"><img src="images/sqare.png" alt="draggable element"></div>
+
+                            <div class="item-lb" data-trackref="song5"><img src="images/sqare.png" alt="draggable element"></div>
+
+                            <div class="item-lb" data-trackref="song6"><img src="images/sqare.png" alt="draggable element"></div>
+
+                            <div class="item-lb" data-trackref="song7"><img src="images/sqare.png" alt="draggable element"></div>
+
+                            <div class="item-lb" data-trackref="song8"><img src="images/sqare.png" alt="draggable element">
+                                </div>
+
                         </div> 
 
-                        <div id="pause-play">
-                            <h3>Pause & Play</h3>
-                            <img src="images/SVG/knobs-dial/SVG/Pause-Play.svg" alt="">
+                        <div id="pause-play ">
+                            <h3 class="hidden">Pause & Play</h3>
+
+                            <img id="pp" src="images/SVG/knobs-dial/SVG/Pause-Play.svg" alt="">
+
+
                         </div>
 
                         <div id="pause-play-text">
@@ -113,51 +146,61 @@
             <h2 class="hidden">Products</h2>
 
             <div id="tv-box" class="col-span-4 col-end-5 m-col-start-7 m-col-end-13 l-col-start-7 l-col-end-13">
-               <div id="tv-layout"></div>
+               <canvas id="tv-layout">  </canvas>
                
                 <div class="grid-item" id="grid-layout-s2">
-                    <div class="item">1</div>
-                    <div class="item">2</div>
-                    <div class="item">3</div>
-                    <div class="item">4</div>
-                    <div class="item">5</div>
-                    <div class="item">6</div>
-                    <div class="item">7</div>
-                    <div class="item">8</div>
+                    <div class="item" id="drop-target-1">1</div>
+                    <div class="item" id="drop-target-2">2</div>
+                    <div class="item" id="drop-target-3">3</div>
+                    <div class="item" id="drop-target-4">4</div>
+                    <div class="item" id="drop-target-5">5</div>
+                    <div class="item" id="drop-target-6">6</div>
+                    <div class="item" id="drop-target-7">7</div>
+                    <div class="item" id="drop-target-8">8</div>
                 </div> 
 
                 <div id="knob"></div>
 
-            </div>
+          </div>
 
 
         </section>
+
+
+
+
+
 
         <section class="grid-con section3">
             <h2 class="hidden">Products</h2>
 
             <div id="knobs1" class="col-start-1 col-end-3 m-col-start-1 m-col-end-4 l-col-start-1 l-col-end-5">
                     <h3>Volume</h3>
-                    <img src="images/SVG/knobs-dial/SVG/Volume.svg" alt="">
+                    <img id="volumedl" src="images/SVG/knobs-dial/SVG/Volume.svg" alt="" draggable="false">
             </div>
 
             <div id="knobs3" class="col-start-3 col-end-5 m-col-start-4 m-col-end-8 l-col-start-5 l-col-end-9">
                 <h3>Rotation</h3>
-                <img src="images/SVG/knobs-dial/SVG/Rotate-Button.svg" alt="">
+                <img id="rotationdl" src="images/SVG/knobs-dial/SVG/Rotate-Button.svg" alt="" draggable="false">
             </div>
 
             <div id="knobs2" class="col-span-4 m-col-start-8 m-col-end-13 l-col-start-9 l-col-end-13">
                 <h3>Reset Button</h3>
-                <button>Reset Button</button>
+                <button id="resetbtn">Reset Button</button>
             </div>
 
         </section>
 
     </main>
 
+
+
+
+
+
+
+
     <footer>
-
-
         <div class="card">
             <p class="card-title">Kiel's & Saif Music Mixer</p>
             <p class="small-desc">
@@ -169,6 +212,15 @@
           </div>
     </footer>
         
+
+
+
+
+
+    <script src="js/main.js"></script>
+    <script src="js/rotate.js"></script>
+    <script src="js/volume.js"></script>
+    <script src="js/vinyl.js"></script>
 
 </body>
 </html>

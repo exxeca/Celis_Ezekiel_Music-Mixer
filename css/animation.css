@@ -1,0 +1,32 @@
+
+.rotate {
+    animation: rotate 4s linear infinite; 
+  }
+  
+  @keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+  }
+  
+
+
+  #volumedl{
+    cursor: grab;
+  }
+  
+
+  #rotationdl{
+    cursor: grab;
+  }
+
+
+  #vinyl{
+    cursor: grab;
+  }
+  
+  
+    
