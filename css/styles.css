@@ -110,6 +110,7 @@ h4, #ve {
     height: 300px;
     width: 300px;
     margin-bottom: 90px;
+    background-color: aquamarine;
 }
 
 /* Item Grids for Sounds */
@@ -135,6 +136,7 @@ h4, #ve {
 
 .item {
     height: 90px;
+    width: 90px;
     /* padding: 10px; */
     border: 1px solid black;
     background-color: brown;
@@ -302,6 +304,7 @@ li {
     display: flex;
     justify-content: center;
     align-items: center; 
+    background-image: url(../images/sqare.png) ;
 
 }
 
